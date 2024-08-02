@@ -6,43 +6,13 @@ function Examplereport(params) {
 
 
     const doc = new jsPDF("p", "mm", "a4");
-
-
     doc.addFileToVFS("THSarabunNew.ttf", Get_font_th());
     doc.addFont("THSarabunNew.ttf", "THSarabunNew", "bold");
     doc.setFont("THSarabunNew", 'bold');
 
-    // x=210 y=295
-    // doc.text(10,20,'test','left');
-    // doc.text(10,30,'test','center');
-    // doc.text(10,40,'test','right');
-    // doc.setFontSize(20);
-    // doc.text(10,50,'test','left');
-    // doc.setFontSize(50);
-    // doc.text(10,60,'test','left');
-    // doc.setTextColor(255,255,0)
-    // doc.text(10,70,'test','left');
-
-    
-    // doc.setDrawColor(255,255,100);
-    // // doc.setFillColor(200,200,200);
-    // doc.rect(10,100,30,10,'D');
-    // doc.setFillColor(200,200,200);
-    // doc.rect(10,120,30,10,'DF');
-    // doc.setFillColor(200,200,200);
-    // doc.rect(10,140,30,10,'F');
-    
-    // doc.addPage();
-
-    // doc.setTextColor('red');
-    // doc.setFontSize(20);
-    // doc.rect(10,20,30,10);
-    // doc.text(10+(30/2),20+(10/2),'testing','left');
-
 
     let hpage = 10;
-//190 กว้าง 
-    // doc.rect(10,hpage,190,10)
+
 
     doc.rect(11,hpage,190*0.1,10)
     doc.text(11+((190*0.1)/2),hpage+(10/2),'ลำดับ','center');
